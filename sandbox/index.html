@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    <title>Vue Sandbox</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Rapper - {{rapper}}</h1>
+        <h1>Song - {{song}}</h1>
+        <h1>Album - {{album}}</h1>
+        <h1>Album - {{sales}}</h1>
+        <button v-on:click="sales++">Increase Sales</button>
+        <button v-on:click="sales--">Decrease Sales</button>
+        <button v-on:click="changeRapper">Change Rapper</button>
+    <div v-show="sentence">
+        <h2>I'm thinkin' 'bout takin' it out (For what?)
+            It's hard to pop shit with my grill in (Ha)
+            I can't let it fuck up my flow
+            Let these lil' niggas run up the score and I still win (Ha)
+            I told her I'm that nigga without it (Let's go)
+            He touch me, he gon' die on the scene
+            I'ma pay me a lawyer and sit in the county (Yeah)
+            You ain't built how I'm built, they ain't seen what I seen
+            I don't want none of these niggas around me (Nuh-uh)</h2>
+    </div>
+
+    <button v-on:click="toggleSentence">Change Lyrics</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
